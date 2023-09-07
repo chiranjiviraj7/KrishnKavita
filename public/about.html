@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&family=Raleway:ital,wght@1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body>
+    <div class="loading-spinner"></div>
+    <header>
+        <nav>
+            <div class="left"><img id="logo-img" src="logo2.png" alt=""></div>
+            <div class="rig">
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="about-about" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                    <li>
+                        <a href='/admin'>Reviews</a>
+                    </li>
+                    <li>
+                        <a href="publish.html">Publish</a>
+                    </li>
+                </ul>
+            </div>
+           
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <div class="m-auto m-width about-intro">
+                <div class="about-intro-left">
+                    <p>कृष्ण और कविता</p>
+                </div>
+                <div class="about-intro-right"><img src="krishna-about.png" alt=""><span id="bhakt">-इक प्रेम</span>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="poetry-inspiration">
+            <div class="write-sec-about" >
+
+                <p id="englishText" style="display: block;">
+                    "Remember the enchanting cartoon 'Little Krishna'? Watching it used to transport us to the magical
+                    realm of Vrindavan. Even today, when I contemplate peace, the image of Krishna, sitting under a
+                    tree, playing the flute, floods my thoughts. Delving deeper into his essence
+                    has brought me the meaning of Krishna that If I ever have the privilege of meeting him, perhaps I'll
+                    just close my eyes, and my heart will find
+                    solace. It's this profound love that has ignited the creation of 'Krishna or
+                    Kavita,' and what better day to launch it than Janmashtami?
+
+                    Join us on this exquisite journey through verses and poems dedicated to Krishna, with the aspiration
+                    of becoming someone's Krishna in life. And I've found my Krishna in this world; have you?"</p>
+                <p id="hindiText" style="display: none;">
+                    "वो कार्टून लिटिल कृष्णा याद है? जिसे देख कर ऐसा लगता था मानो हम खुद वृंदावन में आ गए हो, कृष्ण के
+                    पास! मेरे लिए आज भी वो पेड़ के नीचे बंसी बजाते कान्हा सुकून दे जाते है! जब उनको और जाना तो मालूम चला
+                    कृष्ण का मतलब क्या है! की शायद गर मुझे कृष्ण मिले, तो मैं आंखे मूंद कर मुस्कुराता हुआ वो पेड़ के
+                    नीचे बैठ जाऊंगा! ये प्रेम ही है जिसने ये कृष्ण और कविता की रचना की है! और इसे प्रारंभ करने को
+                    जन्माष्टमी से बेहतर दिन क्या हो! चलिए, हम कृष्ण के बारे में रचनाओं, कविताओं को पढ़े, उम्मीद है की हम
+                    किसी के जीवन में कृष्ण बन सके! और हां मैंने अपने जीवन का कान्हा पा लिया है! आपने?"
+                </p>
+            </div>
+        </section>
+
+        <!-- Add more sections as needed, such as "Artistic Journey," "Philosophical Beliefs," and "Creative Process." -->
+
+    </main>
+    <script src="index.js"></script>
+    <script> const eng=document.getElementById("englishText");
+        const hin=document.getElementById("hindiText");
+        eng.addEventListener("mouseover", function () {
+            eng.style.cursor = "pointer";
+        });
+        eng.addEventListener("click", function () {
+            
+                eng.style.display = "none";
+                hin.style.display="block";
+           
+        });
+        hin.addEventListener("mouseover", function () {
+            hin.style.cursor = "pointer";
+        });
+        hin.addEventListener("click", function () {
+           
+           
+                hin.style.display = "none";
+                eng.style.display="block";
+           
+        });</script>
+</body>
+
+</html>
